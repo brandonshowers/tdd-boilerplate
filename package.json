@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/mocha/node-suite.js",
-    "testem": "testem -l mocha -t ./test/mocha/browser-suite.html"
+    "testem": "testem -l mocha -t ./test/mocha/index.html"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/brandonshowers/tdd-boilerplate#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "chai": "*",
+    "mocha": "*"
   }
 }
