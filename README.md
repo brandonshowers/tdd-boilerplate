@@ -4,5 +4,5 @@
 TDD Boilerplate
 
 # rawgit
-+ [mocha suite](https://rawgit.com/brandonshowers/tdd-boilerplate/master/test/mocha/index.html)
++ [mocha chai suite](https://rawgit.com/brandonshowers/tdd-boilerplate/master/test/SpecRunner.html)
 
