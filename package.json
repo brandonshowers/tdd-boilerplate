@@ -4,8 +4,8 @@
   "description": "TDD boilerplate for JavaScript projects",
   "main": "index.js",
   "scripts": {
-    "test": "node test/mocha/node-suite.js",
-    "testem": "testem -l mocha -t ./test/mocha/index.html"
+    "test": "node test/tests/node-suite.js",
+    "testem": "testem -l mocha -t ./test/SpecRunner.html"
   },
   "repository": {
     "type": "git",

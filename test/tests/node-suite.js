@@ -9,7 +9,7 @@ var Mocha = require('mocha');
 var mocha = new Mocha({ ui: "bdd", reporter: "spec" });
 
 // Add your test files
-mocha.addFile('./test/mocha/suite.js');
+mocha.addFile('./test/tests/suite.js');
 
 // Run your tests
 mocha.run(function (failures) {

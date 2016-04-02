@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>tdd-boilerplate mocha browser-suite</title>
-    <link rel="stylesheet" href="../../vendor/mocha/mocha.css" />
+    <link rel="stylesheet" href="lib/mocha.css" />
   </head>
   <body>
     <div id="mocha"></div>
-    <script src="../../index.js"></script>
-
-    <script src="../../vendor/mocha/mocha.js"></script>
-    <script src="../../vendor/chai/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/chai.js"></script>
     <script>
       mocha.setup('bdd');
-      var expect = chai.expect;
+      window.expect = chai.expect;
 
       if (location.href.indexOf('://localhost:7357') != 1) {
         document.write('<script src="/testem.js">' + '<\/' + 'script>');
       }
     </script>
 
+    <script src="../index.js"></script>
+
     <!-- get tests and start -->
-    <script src="./suite.js"></script>
+    <script src="./tests/suite.js"></script>
     <script>
       mocha.checkLeaks();
       mocha.globals(['boilerplate']); // watch our boilerplate function
